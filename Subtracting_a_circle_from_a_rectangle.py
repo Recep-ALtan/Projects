@@ -1,6 +1,6 @@
 p = 3
-x =float(input("Dikdörtgen kısa kenarı için bir sayı giriniz:"))
-y =float(input("Dikdörgenin uzun kenarı için bir sayı giriniz:"))
+x =float(input("Enter a number for the shortest side of the rectangle:"))
+y =float(input("Enter a number for the longest side of the rectangle:"))
 while x>=y :
     y += 1
 else :
@@ -8,10 +8,11 @@ else :
     print(m)
 
 
-z =float(input("Dairenin yarıçapı için bir sayı giriniz:"))
+z =float(input("Enter a number for the radius of the circle:"))
 while 2*z>=x:
      z-= 0.5
 else :
     n=2*z*p
     print(n)
 print(m-n)
+
