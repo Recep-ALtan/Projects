@@ -1,5 +1,5 @@
 while True :
-  def islem(a,b,c) :
+  def process(a,b,c) :
       if c == "+":
           return a+b
       elif c == "-":
@@ -8,13 +8,18 @@ while True :
           return a*b
       elif c == "/":
           if b == 0:
-              return "Tanımsız!"
+              return "Undefined!"
           else:
               return a/b
+      elif c == "**":
+          return a**b
+      elif c == "//":
+          return a//b
       else:
-          return "Mevcut olan işlemleri tercih ediniz."
+          return "Choose the available transactions."
 
-  hesap =islem(a =float(input("Bir sayı giriniz:")),
-               b =float(input("İkinci bir sayı giriniz:")),
-               c =input("Yapmak istediğiniz işlemi seçiniz(+,-,*,/):"))
-  print(hesap)
+  transactions =process(a =float(input("Enter a number:")),
+               b =float(input("Enter a second number:")),
+               c =input("Select the action you want to perform(+,-,*,/,**,//):"))
+  print(transactions)
+
